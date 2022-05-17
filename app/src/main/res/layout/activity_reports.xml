@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activities.reports.ReportsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/email_reports"
+            android:id="@+id/emailButton"
+            android:drawableLeft="@drawable/ic_email_black_24dp"
+            android:drawableStart="@drawable/ic_email_black_24dp"
+
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="68dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/phoneButton"
+            android:layout_alignStart="@+id/phoneButton"
+            android:background="@drawable/bg_button_lightblue_rounded"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/text_to_cell_reports"
+            android:id="@+id/smsButton"
+            android:drawableLeft="@drawable/ic_sms_black_24dp"
+            android:drawablePadding="20dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/emailButton"
+            android:layout_alignLeft="@+id/emailButton"
+            android:layout_alignStart="@+id/emailButton"
+            android:layout_marginTop="33dp"
+            android:background="@drawable/bg_button_lightblue_rounded"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/phone_reports"
+            android:id="@+id/phoneButton"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_below="@+id/smsButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="23dp"
+            android:background="@drawable/bg_button_lightblue_rounded"/>
+
+        <Button
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:id="@+id/camp_button"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_schedule_button"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

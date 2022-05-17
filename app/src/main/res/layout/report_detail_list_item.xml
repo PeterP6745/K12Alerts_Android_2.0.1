@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+                android:background="#25f2e800"
+              android:layout_height="wrap_content"
+                android:padding="10dp">
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/report_detail_label"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:text="Sample Text"
+        android:textStyle="bold"
+        android:gravity="start|center"
+
+        />
+
+    <TextView
+        android:id="@+id/report_detail_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/report_detail_icon"
+        android:layout_toRightOf="@+id/report_detail_label"
+        android:layout_toEndOf="@+id/report_detail_label"
+        android:layout_marginRight="10dp"
+        android:gravity="center|end"
+        android:text="sample text"
+        android:autoText="false"/>
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:id="@+id/report_detail_icon"
+        android:src="@drawable/ic_emergency_procedures"/>
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dip"
+        android:orientation="horizontal"
+        android:background="#FFF">
+
+        <ImageView
+            android:id="@+id/camp_status_icon"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ic_phone_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="100"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:id="@+id/camp_status_primary_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apr 17 2017 10:45AM"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:textColor="#000"
+                android:maxLines="1"
+                android:ellipsize="end"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/camp_status_secondary_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="..."
+                    android:textSize="12sp"
+
+                    />
+
+                <TextView
+                    android:id="@+id/camp_status_third_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="12sp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginStart="3dp"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/camp_status_button_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_weight="0"
+            android:text="Cancel"
+            android:layout_gravity="end|center_vertical"
+            android:textColor="#FFF"
+            android:background="@android:color/holo_red_dark"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="20dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

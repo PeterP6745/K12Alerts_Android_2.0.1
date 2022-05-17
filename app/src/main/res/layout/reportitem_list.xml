@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/reportitem_list"
+    android:name="messagelogix.com.k12campusalerts.activities.ReportItemListFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    app:layoutManager="LinearLayoutManager"
+    tools:context=".activities.reports.ReportListActivity"
+    tools:listitem="@layout/reportitem_list_content" />

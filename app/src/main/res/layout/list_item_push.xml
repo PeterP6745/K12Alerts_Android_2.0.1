@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="85dp"
+    android:weightSum="1"
+    android:background="@drawable/black_border_white_bg"
+    >
+
+
+    <TextView
+        android:id="@+id/push_message_content"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Message wil be displayed on this line. This is a test to see the outcome."
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:gravity="center|start"
+        android:layout_weight="0.56"/>
+
+    <TextView
+        android:id="@+id/push_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jan 24 2017 12:34PM"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:textAlignment="center"
+        android:gravity="bottom"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+</LinearLayout>

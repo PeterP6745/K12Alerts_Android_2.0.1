@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.onestepalert.OneStepAlertSocialMediaActivity" >
+
+    <Button
+        android:id="@+id/rss_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:text="Share on RSS" />
+
+    <Button
+        android:id="@+id/facebook_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rss_button"
+        android:layout_marginTop="15dp"
+        android:text="Share on Facebook" />
+
+    <Button
+        android:id="@+id/twitter_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/facebook_button"
+        android:layout_marginTop="18dp"
+        android:text="Share on twitter" />
+
+    <Button
+        android:id="@+id/cancelButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/twitter_button"
+        android:layout_marginTop="41dp"
+        android:text="Cancel" />
+
+</RelativeLayout>
